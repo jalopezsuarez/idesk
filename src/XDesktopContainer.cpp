@@ -214,7 +214,7 @@ void XDesktopContainer::arrangeIcons()
             maxW = iPtr->getWidth();
     }
 
-    iconX = widthOfScreen() - maxW - 20;
+    iconX = 30;
 
     for(unsigned int i = 0; i < iconList.size(); i++ )
     {
@@ -224,7 +224,7 @@ void XDesktopContainer::arrangeIcons()
                 heightOfScreen() )
         {
             iconY = 20;
-            iconX = iconX - 20 - maxW;
+            iconX = iconX + 30 + maxW;            
         }
         
         if( iPtr->getX() == 0 && iPtr->getY() == 0 )
@@ -243,7 +243,6 @@ void XDesktopContainer::arrangeIcons()
          
     }
 }
-
 void XDesktopContainer::addIcon(AbstractIcon * icon)
 {
     iconList.push_back(icon);

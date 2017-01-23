@@ -30,6 +30,8 @@
 #include "DesktopIconConfig.h"
 #include <dirent.h>
 
+#include <sys/stat.h>
+
 class DesktopConfig : public AbstractConfig
 {
     protected:
